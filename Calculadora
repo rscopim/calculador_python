@@ -1,0 +1,33 @@
+def soma(numero1, numero2):
+    return numero1 + numero2
+def sub(numero1, numero2):
+    return numero1 - numero2
+def div(numero1, numero2):
+    return numero1 // numero2
+def mult(numero1, numero2):
+    return numero1 * numero2
+
+print("Selecione o número da opção desejada: ")
+
+print("1 - Soma")
+print("2 - Subtração")
+print("3 - Divisão")
+print("4 - Multiplicação")
+opcao = int(input("Digite sua opção (1, 2, 3, 4): "))
+if opcao <= 0 or opcao > 4:
+    print("\nOpção inválida!\n")
+    exit(0)
+numero1 = int(input("Digite o primeiro número: "))
+numero2 = int(input("Digite o segundo número: "))
+
+if opcao == 1:
+    print(numero1, "+", numero2, "=", soma(numero1, numero2))
+
+elif opcao == 2:
+    print(numero1, "-", numero2, "=", sub(numero1, numero2))
+
+elif opcao == 3:
+    print(numero1, "/", numero2, "=", div(numero1, numero2))
+
+elif option == 4:
+    print(numero1, "/", numero2, "=", mult(numero1, numero2))
