@@ -10,7 +10,7 @@ def mult(numero1, numero2):
 print("Vamos fazer os calculos que você precisa: ")
   
 while True:
-    print("Selecione o número da opção desejada: ")
+    print("Selecione o número da operação desejada: ")
     print("1 - Soma")
     print("2 - Subtração")
     print("3 - Divisão")
