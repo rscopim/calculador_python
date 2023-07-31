@@ -31,4 +31,6 @@ elif opcao == 3:
     print(numero1, "/", numero2, "=", div(numero1, numero2))
 
 elif opcao == 4:
-    print(numero1, "*", numero2, "=", mult(numero1, numero2))
+    print(numero1, "*", numero2, "=", mult(numero1, numero2))  
+    
+    
