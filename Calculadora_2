@@ -16,11 +16,14 @@ while True:
     print("3 - Divisão")
     print("4 - Multiplicação")
     print("5 - Sair")    
-    opcao = int(input("Digite a opção correspondente a operação (1, 2, 3, 4, 5): "))
+    opcao = int(input("Digite a opção correspondente a operação (1, 2, 3, 4, 0): "))
+    if (opcao > 5):
+        print("opção invalida, número da operação incorreta!")
+    elif opcao == 0:
+      print("Operação finalizada.")
+      break
     numero1 = int(input("Digite o primeiro número: "))
     numero2 = int(input("Digite o segundo número: "))
-    if (opcao == 0 or opcao > 5):
-        print("opção invalida, número da operação incorreta!")
 
     if opcao == 1:
         print(numero1, "+", numero2, "=", soma(numero1, numero2))
@@ -34,5 +37,5 @@ while True:
     elif opcao == 4:
         print(numero1, "*", numero2, "=", mult(numero1, numero2))
 
-    elif opcao == 5:
-      break
+
+    
